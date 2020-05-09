@@ -13,3 +13,6 @@ puts wrap_around_contents { " my contents" }
 # => "hey your contents =>| my contents |<= have been wrapped"
 
 
+def wrap_around_contents
+  "hey your contents =>| #{yield} |<= have been wrapped"
+end
